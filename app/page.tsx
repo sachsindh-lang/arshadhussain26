@@ -26,12 +26,28 @@ export default function Home() {
 
       <div style={{ maxWidth: '800px', margin: '0 auto', padding: '0 20px' }}>
         
-        {/* 1. HOME SECTION */}
-        <header id="home" style={{ padding: '80px 0 60px 0', textAlign: 'center' }}>
-          <span style={{ backgroundColor: '#1e293b', color: '#10b981', padding: '6px 16px', borderRadius: '20px', fontSize: '0.9rem', fontWeight: '600', border: '1px solid #10b981' }}>
+        {/* 1. HOME SECTION (With Profile Image) */}
+        <header id="home" style={{ padding: '80px 0 60px 0', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <span style={{ backgroundColor: '#1e293b', color: '#10b981', padding: '6px 16px', borderRadius: '20px', fontSize: '0.9rem', fontWeight: '600', border: '1px solid #10b981', marginBottom: '25px' }}>
             Available for Hire 🟢
           </span>
-          <h1 style={{ fontSize: '3.5rem', fontWeight: '800', marginTop: '20px', marginBottom: '15px', background: 'linear-gradient(to right, #38bdf8, #6366f1)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+
+          {/* Your Profile Picture Block */}
+          <img 
+            src="/profile.jpg" 
+            alt="Arshad Hussain" 
+            style={{
+              width: '150px',
+              height: '150px',
+              borderRadius: '50%',
+              objectFit: 'cover',
+              border: '4px solid #38bdf8',
+              marginBottom: '20px',
+              boxShadow: '0 10px 25px -5px rgba(56, 189, 248, 0.3)'
+            }} 
+          />
+
+          <h1 style={{ fontSize: '3.5rem', fontWeight: '800', marginTop: '10px', marginBottom: '15px', background: 'linear-gradient(to right, #38bdf8, #6366f1)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             Hi, I am Arshad Hussain 👋
           </h1>
           <p style={{ fontSize: '1.5rem', color: '#94a3b8', marginBottom: '30px' }}>
@@ -85,7 +101,6 @@ export default function Home() {
             <a href="mailto:arshadh6611@gmail.com" style={{ backgroundColor: '#1e293b', color: 'white', padding: '12px 24px', borderRadius: '30px', textDecoration: 'none', fontWeight: '600', border: '1px solid #334155' }}>Email Me ✉️</a>
           </div>
 
-          {/* Clean Visual Contact Form Details */}
           <div style={{ textAlign: 'left', backgroundColor: '#111827', padding: '20px', borderRadius: '12px', border: '1px solid #1f2937' }}>
             <p style={{ margin: '5px 0', color: '#94a3b8' }}><strong>Official Email:</strong> arshadh6611@gmail.com</p>
             <p style={{ margin: '5px 0', color: '#94a3b8' }}><strong>Phone/WhatsApp:</strong> +92 305 3044806</p>
